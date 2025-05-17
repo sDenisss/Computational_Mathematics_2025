@@ -1,0 +1,593 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\interpolationfuctionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\interpolationfuctionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\approximationmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\approximationmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\cofficientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\cofficientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\gauss_seidel_methodviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\gauss_seidel_methodviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\interpolationfunctionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\interpolationfunctionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\interpolationfunctionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\interpolationfunctionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\nonlinearequationswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\nonlinearequationswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\model\\interpolationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\model\\interpolationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\nonlinearequationswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\nonlinearequationswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\numericalintegrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\numericalintegrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\numericalintegrationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\numericalintegrationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\numericalintegrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\numericalintegrationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\gauss_seidel_methodwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\gauss_seidel_methodwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\model\\approximationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\model\\approximationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\gauss_seidel_methodwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\gauss_seidel_methodwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\approximationfuncviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\approximationfuncviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\approximationfuncwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\approximationfuncwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\approximationfuncwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\approximationfuncwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\model\\configs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\model\\configs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\model\\functionforchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\model\\functionforchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\systemnonlinearequationswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\systemnonlinearequationswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\model\\systemforchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\model\\systemforchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\model\\method.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\model\\method.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\nonlinearequationsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\nonlinearequationsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\viewmodels\\systemnonlinearequationsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\viewmodels\\systemnonlinearequationsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\systemnonlinearequationswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\systemnonlinearequationswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\view\\numericalintegrationwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\view\\numericalintegrationwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\obj\\Debug\\net8.0-windows\\View\\NonlinearEquationsAndSystemWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CM1Lab\\obj\\Debug\\net8.0-windows\\View\\NonlinearEquationsAndSystemWindow.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\mvvm\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\mvvm\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\mvvm\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\mvvm\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|c:\\university\\programming\\computational mathematics\\cm1lab\\cm1lab\\cm1lab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F27C6A25-7573-405C-9871-493F944D3679}|CM1Lab\\CM1Lab.csproj|solutionrelative:cm1lab\\cm1lab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InterpolationFuctionViewModel.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\InterpolationFuctionViewModel.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\InterpolationFuctionViewModel.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\InterpolationFuctionViewModel.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\InterpolationFuctionViewModel.cs",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAwwDQBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:10:40.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InterpolationFunctionWindow.xaml.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\InterpolationFunctionWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\InterpolationFunctionWindow.xaml.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\InterpolationFunctionWindow.xaml.cs",
+              "RelativeToolTip": "CM1Lab\\View\\InterpolationFunctionWindow.xaml.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAkwMMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:36:48.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gauss_Seidel_MethodViewModel.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\Gauss_Seidel_MethodViewModel.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\Gauss_Seidel_MethodViewModel.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\Gauss_Seidel_MethodViewModel.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\Gauss_Seidel_MethodViewModel.cs",
+              "ViewState": "AgIAALUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T20:14:37.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CofficientsViewModel.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\CofficientsViewModel.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\CofficientsViewModel.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\CofficientsViewModel.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\CofficientsViewModel.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:20:41.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApproximationMethods.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\ApproximationMethods.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\ApproximationMethods.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\ApproximationMethods.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\ApproximationMethods.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAAAKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T10:36:49.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InterpolationFunctionWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\InterpolationFunctionWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\InterpolationFunctionWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\InterpolationFunctionWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\View\\InterpolationFunctionWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-16T12:34:24.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InterpolationResult.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\InterpolationResult.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\Model\\InterpolationResult.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\InterpolationResult.cs",
+              "RelativeToolTip": "CM1Lab\\Model\\InterpolationResult.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:47:27.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NonlinearEquationsWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NonlinearEquationsWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\NonlinearEquationsWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NonlinearEquationsWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\View\\NonlinearEquationsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-16T23:34:45.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NonlinearEquationsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NonlinearEquationsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\NonlinearEquationsWindow.xaml.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NonlinearEquationsWindow.xaml.cs",
+              "RelativeToolTip": "CM1Lab\\View\\NonlinearEquationsWindow.xaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:27:30.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NumericalIntegrationViewModel.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\NumericalIntegrationViewModel.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\NumericalIntegrationViewModel.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\NumericalIntegrationViewModel.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\NumericalIntegrationViewModel.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAuwBQBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T18:36:48.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NumericalIntegrationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NumericalIntegrationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\NumericalIntegrationWindow.xaml.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NumericalIntegrationWindow.xaml.cs",
+              "RelativeToolTip": "CM1Lab\\View\\NumericalIntegrationWindow.xaml.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T19:15:53.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NumericalIntegrationWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-21T18:14:45.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Gauss_Seidel_MethodWindow.xaml.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml.cs",
+              "RelativeToolTip": "CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T20:29:19.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApproximationResult.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\ApproximationResult.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\Model\\ApproximationResult.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\ApproximationResult.cs",
+              "RelativeToolTip": "CM1Lab\\Model\\ApproximationResult.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T10:36:06.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Gauss_Seidel_MethodWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\View\\Gauss_Seidel_MethodWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-22T09:23:33.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApproximationFuncViewModel.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\ApproximationFuncViewModel.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\ApproximationFuncViewModel.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\ApproximationFuncViewModel.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\ApproximationFuncViewModel.cs",
+              "ViewState": "AgIAAGkBAAAAAAAAAAAQwH0BAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:18:26.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CM1Lab\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwDQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T11:47:21.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApproximationFuncWindow.xaml.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\ApproximationFuncWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\ApproximationFuncWindow.xaml.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\ApproximationFuncWindow.xaml.cs",
+              "RelativeToolTip": "CM1Lab\\View\\ApproximationFuncWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:13:43.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApproximationFuncWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\ApproximationFuncWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\ApproximationFuncWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\ApproximationFuncWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\View\\ApproximationFuncWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-17T14:17:47.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\MainWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MainWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T11:47:22.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Configs.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\Configs.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\Model\\Configs.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\Configs.cs",
+              "RelativeToolTip": "CM1Lab\\Model\\Configs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T14:12:54.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FunctionForChoice.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\FunctionForChoice.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\Model\\FunctionForChoice.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\FunctionForChoice.cs",
+              "RelativeToolTip": "CM1Lab\\Model\\FunctionForChoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:16:04.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SystemNonlinearEquationsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml.cs",
+              "RelativeToolTip": "CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:33:30.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SystemForChoice.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\SystemForChoice.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\Model\\SystemForChoice.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\SystemForChoice.cs",
+              "RelativeToolTip": "CM1Lab\\Model\\SystemForChoice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:33:41.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Method.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\Method.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\Model\\Method.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\Model\\Method.cs",
+              "RelativeToolTip": "CM1Lab\\Model\\Method.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T12:59:50.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NonlinearEquationsViewModel.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\NonlinearEquationsViewModel.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\NonlinearEquationsViewModel.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\NonlinearEquationsViewModel.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\NonlinearEquationsViewModel.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:10:18.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SystemNonlinearEquationsViewModel.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\SystemNonlinearEquationsViewModel.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\ViewModels\\SystemNonlinearEquationsViewModel.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\ViewModels\\SystemNonlinearEquationsViewModel.cs",
+              "RelativeToolTip": "CM1Lab\\ViewModels\\SystemNonlinearEquationsViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:16:38.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SystemNonlinearEquationsWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\View\\SystemNonlinearEquationsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-09T00:24:23.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NumericalIntegrationWindow.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "RelativeToolTip": "CM1Lab\\View\\NumericalIntegrationWindow.xaml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAE8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-22T21:41:17.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\App.xaml",
+              "RelativeDocumentMoniker": "CM1Lab\\App.xaml",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\App.xaml",
+              "RelativeToolTip": "CM1Lab\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-10T16:11:34.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NonlinearEquationsAndSystemWindow.g.i.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\obj\\Debug\\net8.0-windows\\View\\NonlinearEquationsAndSystemWindow.g.i.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\obj\\Debug\\net8.0-windows\\View\\NonlinearEquationsAndSystemWindow.g.i.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\obj\\Debug\\net8.0-windows\\View\\NonlinearEquationsAndSystemWindow.g.i.cs",
+              "RelativeToolTip": "CM1Lab\\obj\\Debug\\net8.0-windows\\View\\NonlinearEquationsAndSystemWindow.g.i.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAvwFcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T20:11:25.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\AssemblyInfo.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\AssemblyInfo.cs",
+              "RelativeToolTip": "CM1Lab\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:46:57.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MVVM\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\MVVM\\ViewModelBase.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MVVM\\ViewModelBase.cs",
+              "RelativeToolTip": "CM1Lab\\MVVM\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T18:39:44.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MVVM\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "CM1Lab\\MVVM\\RelayCommand.cs",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\MVVM\\RelayCommand.cs",
+              "RelativeToolTip": "CM1Lab\\MVVM\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T18:39:30.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CM1Lab.csproj",
+              "DocumentMoniker": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\CM1Lab.csproj",
+              "RelativeDocumentMoniker": "CM1Lab\\CM1Lab.csproj",
+              "ToolTip": "C:\\University\\Programming\\Computational Mathematics\\CM1Lab\\CM1Lab\\CM1Lab.csproj",
+              "RelativeToolTip": "CM1Lab\\CM1Lab.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-22T09:21:43.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\user\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs [Read Only]",
+              "ViewState": "AgIAAHsBAAAAAAAAAAApwIgBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T12:14:29.674Z",
+              "EditorCaption": " [Read Only]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
