@@ -1,0 +1,20 @@
+﻿CM1Lab
+
+
+winexe
+C#
+.cs
+C:\University\Programming\Computational Mathematics\CM1Lab\CM1Lab\obj\Debug\net8.0-windows\
+CM1Lab
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\University\Programming\Computational Mathematics\CM1Lab\CM1Lab\App.xaml
+71582959586
+
+26359425851
+202-1700341436
+MainWindow.xaml;View\ApproximationFuncWindow.xaml;View\Gauss_Seidel_MethodWindow.xaml;View\InterpolationFunctionWindow.xaml;View\NonlinearEquationsWindow.xaml;View\NumericalIntegrationWindow.xaml;View\SystemNonlinearEquationsWindow.xaml;
+
+False
+

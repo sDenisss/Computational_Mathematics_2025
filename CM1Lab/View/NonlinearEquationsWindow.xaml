@@ -1,0 +1,110 @@
+﻿<Window x:Class="CM1Lab.View.NonlinearEquationsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CM1Lab.View"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="NonlinearEquationsWindow" Height="1080" Width="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <oxy:PlotView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Model="{Binding PlotModel}" />
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <!--<Button Content="S" Width="35" Height="35" IsDefault="True" Click="ChooseWayClick" />-->
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+            <!--<TextBlock FontSize="10">Размер:</TextBlock>-->
+            <!--<TextBox Text="{Binding Size}" x:Name="Size" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>-->
+
+            <!--@Choice method to solution -->
+            <ComboBox x:Name="methodsComboBox"
+                      SelectedValuePath="MethodName"
+                      SelectedValue="{Binding SelectedMethod, Mode=TwoWay}"
+                      DisplayMemberPath="MethodName"
+                      Height="20px" Width="100px" Margin="5" FontSize="10"/>
+
+            <ComboBox x:Name="functionsComboBox"
+                      SelectedValuePath="FunctionName"
+                      SelectedValue="{Binding SelectedFunction, Mode=TwoWay}"
+                      DisplayMemberPath="FunctionName"
+                      Height="20px" Width="100px" Margin="5" FontSize="10"/>
+
+            <TextBlock FontSize="10">Точность:</TextBlock>
+            <TextBox Text="{Binding Accuracy}" x:Name="Accuracy" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+            <TextBlock FontSize="10">Интервал a:</TextBlock>
+            <TextBox Text="{Binding Ainterval}" x:Name="Ainterval" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+            <TextBlock FontSize="10">Интервал b:</TextBlock>
+            <TextBox Text="{Binding Binterval}" x:Name="Binterval" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+            <TextBlock FontSize="10">Начальное приближение:</TextBlock>
+            <TextBox Text="{Binding X0}" x:Name="X0" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+
+
+
+
+
+            <!--<TextBlock FontSize="10">Размерность:</TextBlock>
+            <TextBox Text="{Binding Size}" x:Name="Size" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+
+            <TextBlock FontSize="10">Максимальное количестов итераций:</TextBlock>
+            <TextBox Text="{Binding MaxCountOfIter}" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>-->
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left">
+            <TextBlock FontSize="10" HorizontalAlignment="Left">BisectionMethod:</TextBlock>
+            <TextBlock FontSize="10" HorizontalAlignment="Left" Text="{Binding BisectionRoot}"></TextBlock>
+
+            <!--<TextBlock FontSize="10" HorizontalAlignment="Left">ChordMethod:</TextBlock>
+            <TextBlock FontSize="10" HorizontalAlignment="Left" Text="{Binding ChordRoot}"></TextBlock>
+
+            <TextBlock FontSize="10" HorizontalAlignment="Left">NewtonMethod:</TextBlock>
+            <TextBlock FontSize="10" HorizontalAlignment="Left" Text="{Binding NewtonRoot}"></TextBlock>-->
+
+            <TextBlock FontSize="10" HorizontalAlignment="Left">SecantMethod:</TextBlock>
+            <TextBlock FontSize="10" HorizontalAlignment="Left" Text="{Binding SecantRoot}"></TextBlock>
+
+            <TextBlock FontSize="10" HorizontalAlignment="Left">SimpleIterationMethod:</TextBlock>
+            <TextBlock FontSize="10" HorizontalAlignment="Left" Text="{Binding SimpleIterationRoot}"></TextBlock>
+
+        </StackPanel>
+
+        <!--<StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left">
+        <TextBlock FontSize="10" HorizontalAlignment="Left">Коэффициенты:</TextBlock>
+        <TextBox x:Name="Coef" Height="600px" Width="600px" Margin="10px" BorderBrush="Black"/>
+    </StackPanel>-->
+
+
+        <!-- Панель для ввода данных -->
+        <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1">
+            <!-- Панель для коэффициентов -->
+            <TextBlock FontSize="10">Уравнение:</TextBlock>
+            <TextBox Text="{Binding EquationFormula, UpdateSourceTrigger=PropertyChanged}" 
+                 x:Name="EquationFormula" 
+                 Height="25px" Width="600px" Margin="5" FontSize="10" BorderBrush="Black"/>
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center">
+            <Button Content="Выбрать файл" Width="100" Height="35" Margin="10px" IsDefault="True" Click="ChooseWayClick" />
+            <Button Content="Посчитать" Width="100" Height="35" Margin="10px" IsDefault="True" Click="CountResults" />
+            <Button Height="50" Width="50" FontSize="30" Foreground="White" Margin="20" HorizontalAlignment="Left"  
+                Background="#222244" FontWeight="Bold" Click="ToHomeClick" >&lt;</Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>

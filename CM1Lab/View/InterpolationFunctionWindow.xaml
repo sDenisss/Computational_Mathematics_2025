@@ -1,0 +1,88 @@
+﻿<Window x:Class="CM1Lab.View.InterpolationFunctionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CM1Lab.View"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="InterpolationFunctionWindow" Height="1080" Width="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="4*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <oxy:PlotView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Model="{Binding PlotModel}" />
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <!--<Button Content="S" Width="35" Height="35" IsDefault="True" Click="ChooseWayClick" />-->
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+
+            <!--<ComboBox x:Name="functionsComboBox"
+               SelectedValuePath="FunctionName"
+               SelectedValue="{Binding SelectedFunction, Mode=TwoWay}"
+               DisplayMemberPath="FunctionName"
+               Height="20px" Width="100px" Margin="5" FontSize="10"/>-->
+
+            <!--<TextBlock FontSize="10">Точность:</TextBlock>
+            <TextBox Text="{Binding Accuracy}" x:Name="Accuracy" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>-->
+            <ComboBox x:Name="methodsComboBox"
+                  SelectedValuePath="MethodName"
+                  SelectedValue="{Binding SelectedMethod, Mode=TwoWay}"
+                  DisplayMemberPath="MethodName"
+                  Height="20px" Width="100px" Margin="5" FontSize="10"/>
+
+            <!--<ComboBox x:Name="functionsComboBox"
+                  SelectedValuePath="FunctionName"
+                  SelectedValue="{Binding SelectedFunction, Mode=TwoWay}"
+                  DisplayMemberPath="FunctionName"
+                  Height="20px" Width="100px" Margin="5" FontSize="10"/>-->
+            <TextBlock FontSize="10">Размерность:</TextBlock>
+            <TextBox Text="{Binding Size}" x:Name="Size" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+            <TextBlock FontSize="10">Интерполирующая точка:</TextBlock>
+            <TextBox Text="{Binding XValue}" x:Name="XValue" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left">
+            <TextBlock FontSize="13" HorizontalAlignment="Left">Результат:</TextBlock>
+            <TextBlock FontSize="13" HorizontalAlignment="Left" Text="{Binding Result}"></TextBlock>
+
+            <TextBlock FontSize="10">Таблица конечных разностей:</TextBlock>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Height="150">
+                <Grid x:Name="CoefficientGridResults" />
+            </ScrollViewer>
+
+        </StackPanel>
+
+
+        <!-- Панель для ввода данных -->
+        <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1">
+            <!-- Панель для коэффициентов -->
+            <TextBlock FontSize="10">Коэффициенты(в 1-ой строке x, во 2-ой y):</TextBlock>
+
+            <Grid x:Name="CoefficientGrid">
+                <!-- Мы будем динамически заполнять Grid, исходя из Size -->
+            </Grid>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center">
+            <Button Content="Выбрать файл" Width="100" Height="35" Margin="10px" IsDefault="True" Click="ChooseWayClick" />
+            <Button Content="Подтведить" Width="100" Height="35" Margin="10px" IsDefault="True" Click="Confirm" />
+            <Button Content="Посчитать" Width="100" Height="35" Margin="10px" IsDefault="True" Click="CountResults" />
+            <Button Height="50" Width="50" FontSize="30" Foreground="White" Margin="20" HorizontalAlignment="Left"  
+         Background="#222244" FontWeight="Bold" Click="ToHomeClick" >&lt;</Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
