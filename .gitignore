@@ -1,0 +1,48 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Rider files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.userosscache
+*.sln.docstates
+*.vsidx
+*.VC.db
+*.pdb
+*.log
+*.tmp
+*.cache
+*.csproj.user
+
+# Backup files
+*.bak
+*.old
+*.orig
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Debug
+*.exe
+*.dll
+*.mdb
+*.ilk
+*.ipch
+*.aps
+*.ncb
+*.res
+*.idb
+*.tlog
+
+# Dotnet tools
+.project/
+.vscode/
