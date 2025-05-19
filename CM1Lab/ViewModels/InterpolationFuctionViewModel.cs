@@ -23,6 +23,8 @@ namespace CM1Lab.ViewModels
         private string? size;
         private string? selectedFunction;
         private string? selectedMethod;
+        private string? intervalA;
+        private string? intervalB;
         private ObservableCollection<string> coefficientsX = new ObservableCollection<string>();
         private ObservableCollection<string> coefficientsY = new ObservableCollection<string>();
         private PlotModel _plotModel;
@@ -30,11 +32,6 @@ namespace CM1Lab.ViewModels
         private ObservableCollection<InterpolationResult> _interpolationResults;
         //private ApproximationResult _bestApproximation;
         private double _result;
-        private double _bestApproximation;
-        private double _coefDetermination;
-        private double _pearsonCorrelation;
-
-        private string _sredneKvOtklon;
         private string? xValue;
 
         public string XValue
@@ -44,6 +41,25 @@ namespace CM1Lab.ViewModels
             {
                 xValue = value;
                 OnPropertyChanged(nameof(XValue));
+            }
+        }
+
+        public string IntervalA
+        {
+            get => intervalA;
+            set
+            {
+                intervalA = value;
+                OnPropertyChanged(nameof(IntervalA));
+            }
+        }
+        public string IntervalB
+        {
+            get => intervalB;
+            set
+            {
+                intervalB = value;
+                OnPropertyChanged(nameof(IntervalB));
             }
         }
 
@@ -263,53 +279,56 @@ namespace CM1Lab.ViewModels
             }
         }
 
+        // Метод интерполяции Лагранжа
         public static InterpolationResult LagrangeInterpolation(double[] x, double[] y, double xValue)
         {
-            int n = x.Length;
-            double result = 0.0;
-            double[] errors = new double[n];
-            double sumSqError = 0;
+            int n = x.Length; // Количество точек
+            double result = 0.0; // Результат интерполяции
+            double[] errors = new double[n]; // Ошибки в узлах
+            double sumSqError = 0; // Сумма квадратов ошибок
 
+            // Вычисление значения интерполяционного многочлена в xValue
             for (int i = 0; i < n; i++)
             {
-                double term = y[i];
+                double term = y[i]; // Начинаем с значения функции
                 for (int j = 0; j < n; j++)
                 {
                     if (j != i)
                     {
-                        term *= (xValue - x[j]) / (x[i] - x[j]);
+                        term *= (xValue - x[j]) / (x[i] - x[j]); // Умножаем на дробь Лагранжа
                     }
                 }
-                result += term;
+                result += term; // Прибавляем слагаемое к сумме
             }
 
-            // Вычисляем значения функции в узлах для оценки погрешности
+            // Вычисление ошибок интерполяции в узлах
             for (int i = 0; i < n; i++)
             {
-                double yiInterpolated = 0.0;
+                double yiInterpolated = 0.0; // Интерполированное значение в x[i]
                 for (int j = 0; j < n; j++)
                 {
-                    double lj = 1.0;
+                    double lj = 1.0; // Член Лагранжа
                     for (int k = 0; k < n; k++)
                     {
                         if (k != j)
                         {
-                            lj *= (x[i] - x[k]) / (x[j] - x[k]);
+                            lj *= (x[i] - x[k]) / (x[j] - x[k]); // Строим полином
                         }
                     }
-                    yiInterpolated += y[j] * lj;
+                    yiInterpolated += y[j] * lj; // Прибавляем вклад очередного члена
                 }
 
-                double error = yiInterpolated - y[i];
-                errors[i] = error;
-                sumSqError += error * error;
+                double error = yiInterpolated - y[i]; // Разница между интерполяцией и точным значением
+                errors[i] = error; // Сохраняем ошибку
+                sumSqError += error * error; // Прибавляем квадрат ошибки
             }
 
+            // Возвращаем объект InterpolationResult
             return new InterpolationResult
             {
-                FunctionType = "Многочлен Лагранжа",
-                Coefficients = new double[0], // коэффициенты неявные
-                Function = (double arg) =>
+                FunctionType = "Многочлен Лагранжа", // Тип функции
+                Coefficients = new double[0], // Нет явных коэффициентов
+                Function = (double arg) => // Функция для построения графика
                 {
                     double sum = 0.0;
                     for (int i = 0; i < n; i++)
@@ -318,128 +337,130 @@ namespace CM1Lab.ViewModels
                         for (int j = 0; j < n; j++)
                         {
                             if (j != i)
-                                li *= (arg - x[j]) / (x[i] - x[j]);
+                                li *= (arg - x[j]) / (x[i] - x[j]); // Формула Лагранжа
                         }
                         sum += y[i] * li;
                     }
-                    return sum;
+                    return sum; // Возвращаем значение функции
                 },
-                Errors = errors,
-                StandardDeviation = Math.Sqrt(sumSqError / n),
-                DeterminationCoefficient = 1 // можно оценить при необходимости
+                Errors = errors, // Ошибки по точкам
+                StandardDeviation = Math.Sqrt(sumSqError / n), // Среднеквадратичное отклонение
+                DeterminationCoefficient = 1 // Можно дополнительно оценивать
             };
         }
 
+        // Метод Ньютона с разделёнными разностями
         public static InterpolationResult NewtonDividedDifferences(double[] x, double[] y)
         {
-            int n = x.Length;
-            double[,] divided = new double[n, n];
+            int n = x.Length; // Количество точек
+            double[,] divided = new double[n, n]; // Таблица разностей
 
-            // Инициализация нулевого порядка
+            // Инициализация нулевого порядка (f[xi])
             for (int i = 0; i < n; i++)
                 divided[i, 0] = y[i];
 
-            // Построение таблицы разделённых разностей
+            // Заполнение таблицы разделённых разностей
             for (int j = 1; j < n; j++)
             {
                 for (int i = 0; i < n - j; i++)
                 {
-                    divided[i, j] = (divided[i + 1, j - 1] - divided[i, j - 1]) / (x[i + j] - x[i]);
+                    divided[i, j] = (divided[i + 1, j - 1] - divided[i, j - 1]) / (x[i + j] - x[i]); // Формула разделённой разности
                 }
             }
 
-            // Построение функции на основе коэффициентов
-            double[] coefficients = new double[n];
+            double[] coefficients = new double[n]; // Коэффициенты многочлена
             for (int i = 0; i < n; i++)
-                coefficients[i] = divided[0, i];
+                coefficients[i] = divided[0, i]; // Забираем верхнюю строку
 
+            // Функция для построения многочлена
             Func<double, double> function = (double value) =>
             {
-                double result = coefficients[0];
-                double product = 1.0;
+                double result = coefficients[0]; // Начинаем с первого коэффициента
+                double product = 1.0; // Произведение членов (x - x0)(x - x1)...
                 for (int i = 1; i < n; i++)
                 {
-                    product *= (value - x[i - 1]);
-                    result += coefficients[i] * product;
+                    product *= (value - x[i - 1]); // Умножаем на (x - xi)
+                    result += coefficients[i] * product; // Прибавляем очередной член
                 }
                 return result;
             };
 
-            // Ошибки в узлах
-            double[] errors = new double[n];
-            double sumSq = 0;
+            double[] errors = new double[n]; // Ошибки
+            double sumSq = 0; // Сумма квадратов ошибок
             for (int i = 0; i < n; i++)
             {
-                double approx = function(x[i]);
-                errors[i] = approx - y[i];
-                sumSq += errors[i] * errors[i];
+                double approx = function(x[i]); // Значение функции
+                errors[i] = approx - y[i]; // Ошибка
+                sumSq += errors[i] * errors[i]; // Квадрат ошибки
             }
 
             return new InterpolationResult
             {
                 FunctionType = "Многочлен Ньютона с разделенными разностями",
-                Coefficients = coefficients,
-                Function = function,
-                Errors = errors,
-                StandardDeviation = Math.Sqrt(sumSq / n),
-                DeterminationCoefficient = 1 // не рассчитываем здесь
+                Coefficients = coefficients, // Коэффициенты
+                Function = function, // Сама функция
+                Errors = errors, // Ошибки
+                StandardDeviation = Math.Sqrt(sumSq / n), // СКО
+                DeterminationCoefficient = 1 // Для простоты
             };
         }
 
+        // Метод Ньютона с конечными разностями (для равноотстоящих узлов)
         public static InterpolationResult NewtonFiniteDifferences(double[] x, double[] y)
         {
             int n = x.Length;
-            double h = x[1] - x[0];
+            double h = x[1] - x[0]; // Шаг между узлами
 
-            // Проверка на равноотстоящие узлы
+            // Проверка, что все узлы равноотстоящие
             for (int i = 1; i < n - 1; i++)
             {
                 if (Math.Abs((x[i + 1] - x[i]) - h) > 1e-8)
                     throw new ArgumentException("Узлы не равноотстоящие — используйте метод разделённых разностей");
             }
 
-            // Построение таблицы конечных разностей
-            double[,] delta = new double[n, n];
+            double[,] delta = new double[n, n]; // Таблица конечных разностей
             for (int i = 0; i < n; i++)
-                delta[i, 0] = y[i];
+                delta[i, 0] = y[i]; // Первая колонка = значения функции
 
+            // Заполнение таблицы конечных разностей
             for (int j = 1; j < n; j++)
                 for (int i = 0; i < n - j; i++)
-                    delta[i, j] = delta[i + 1, j - 1] - delta[i, j - 1];
+                    delta[i, j] = delta[i + 1, j - 1] - delta[i, j - 1]; // Разность предыдущих разностей
 
+            // Построение функции Ньютона по конечным разностям
             Func<double, double> function = (double value) =>
             {
-                double t = (value - x[0]) / h;
-                double result = y[0];
-                double tProduct = 1.0;
+                double t = (value - x[0]) / h; // Переменная t
+                double result = y[0]; // Начальное значение
+                double tProduct = 1.0; // Произведение t(t-1)... для каждого i
                 for (int i = 1; i < n; i++)
                 {
-                    tProduct *= (t - (i - 1));
-                    result += (tProduct / Factorial(i)) * delta[0, i];
+                    tProduct *= (t - (i - 1)); // t(t-1)...(t-i+1)
+                    result += (tProduct / Factorial(i)) * delta[0, i]; // Следующий член ряда
                 }
                 return result;
             };
 
-            // Ошибки в узлах
-            double[] errors = new double[n];
+            double[] errors = new double[n]; // Ошибки
             double sumSq = 0;
             for (int i = 0; i < n; i++)
             {
-                double approx = function(x[i]);
-                errors[i] = approx - y[i];
-                sumSq += errors[i] * errors[i];
+                double approx = function(x[i]); // Приближение
+                errors[i] = approx - y[i]; // Ошибка
+                sumSq += errors[i] * errors[i]; // Сумма квадратов
             }
 
             return new InterpolationResult
             {
                 FunctionType = "Многочлен Ньютона с конечными разностями",
-                Coefficients = Enumerable.Range(0, n).Select(i => delta[0, i]).ToArray(),
-                Function = function,
-                Errors = errors,
-                StandardDeviation = Math.Sqrt(sumSq / n),
-                DeterminationCoefficient = 1
+                Coefficients = Enumerable.Range(0, n).Select(i => delta[0, i]).ToArray(), // Коэф. — первая строка
+                Function = function, // Сама функция
+                Errors = errors, // Ошибки
+                StandardDeviation = Math.Sqrt(sumSq / n), // СКО
+                DeterminationCoefficient = 1 // Можно уточнить при желании
             };
         }
+
 
         private static long Factorial(int n)
         {
@@ -449,7 +470,53 @@ namespace CM1Lab.ViewModels
             return result;
         }
 
+        public void GenerateFunctionData()
+        {
+            if (!double.TryParse(IntervalA, out double a) || !double.TryParse(IntervalB, out double b) || !int.TryParse(Size, out int n))
+            {
+                MessageBox.Show("Некорректные входные данные для интервала или размерности");
+                return;
+            }
 
+            if (n < 2)
+            {
+                MessageBox.Show("Количество точек должно быть не меньше 2");
+                return;
+            }
+
+            if (a >= b)
+            {
+                MessageBox.Show("Левая граница интервала должна быть меньше правой");
+                return;
+            }
+
+            CoefficientsX.Clear();
+            CoefficientsY.Clear();
+
+            double h = (b - a) / (n - 1);
+            for (int i = 0; i < n; i++)
+            {
+                double x = a + i * h;
+                double y = CalculateFunction(x);
+
+                CoefficientsX.Add(x.ToString("F4"));
+                CoefficientsY.Add(y.ToString("F4"));
+            }
+
+            OnPropertyChanged(nameof(CoefficientsX));
+            OnPropertyChanged(nameof(CoefficientsY));
+        }
+
+        private double CalculateFunction(double x)
+        {
+            switch (SelectedFunction)
+            {
+                case "sin(x)": return Math.Sin(x);
+                case "x²": return x * x;
+                case "ln(x)": return x > 0 ? Math.Log(x) : 0;
+                default: return 0;
+            }
+        }
 
 
         // Метод для построения графика

@@ -42,17 +42,17 @@ namespace CM1Lab.View
             methodsComboBox.DisplayMemberPath = "MethodName";
             methodsComboBox.SelectedValuePath = "MethodName";
 
-            //var functions = new List<FunctionForChoice>
-            //{
-            //    //new FunctionForChoice { FunctionName = "Впиши в поле" },
-            //    new FunctionForChoice { FunctionName = "∫x²dx" },
-            //    new FunctionForChoice { FunctionName = "∫sin(x)dx" },
-            //    new FunctionForChoice { FunctionName = "∫(2x³-3x²+4x-22)dx" },
-            //};
+            var functions = new List<FunctionForChoice>
+            {
+                //new FunctionForChoice { FunctionName = "Впиши в поле" },
+                new FunctionForChoice { FunctionName = "x²" },
+                new FunctionForChoice { FunctionName = "sin(x)" },
+                new FunctionForChoice { FunctionName = "ln(x)" },
+            };
 
-            //functionsComboBox.ItemsSource = functions;
-            //functionsComboBox.DisplayMemberPath = "FunctionName";
-            //functionsComboBox.SelectedValuePath = "FunctionName";
+            functionsComboBox.ItemsSource = functions;
+            functionsComboBox.DisplayMemberPath = "FunctionName";
+            functionsComboBox.SelectedValuePath = "FunctionName";
         }
 
         public void ChooseWayClick(object sender, EventArgs e)
@@ -192,6 +192,7 @@ namespace CM1Lab.View
         {
 
             //vm.BuildGraphic(); // Теперь вызываем метод из ViewModel
+            vm.GenerateFunctionData();
             vm.ApproximationSolve();
             if (vm.SelectedMethod == "Многочлен Ньютона с конечными разностями")
             {

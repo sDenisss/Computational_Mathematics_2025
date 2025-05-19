@@ -42,15 +42,19 @@
                   DisplayMemberPath="MethodName"
                   Height="20px" Width="100px" Margin="5" FontSize="10"/>
 
-            <!--<ComboBox x:Name="functionsComboBox"
+            <ComboBox x:Name="functionsComboBox"
                   SelectedValuePath="FunctionName"
                   SelectedValue="{Binding SelectedFunction, Mode=TwoWay}"
                   DisplayMemberPath="FunctionName"
-                  Height="20px" Width="100px" Margin="5" FontSize="10"/>-->
+                  Height="20px" Width="100px" Margin="5" FontSize="10"/>
             <TextBlock FontSize="10">Размерность:</TextBlock>
             <TextBox Text="{Binding Size}" x:Name="Size" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
             <TextBlock FontSize="10">Интерполирующая точка:</TextBlock>
             <TextBox Text="{Binding XValue}" x:Name="XValue" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+            <TextBlock FontSize="10">Интервал А:</TextBlock>
+            <TextBox Text="{Binding IntervalA}" x:Name="IntervalA" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
+            <TextBlock FontSize="10">Интервал В:</TextBlock>
+            <TextBox Text="{Binding IntervalB}" x:Name="IntervalB" Height="17px" Width="100px" Margin="5" FontSize="10" BorderBrush="Black"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left">
